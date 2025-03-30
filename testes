@@ -1,0 +1,21 @@
+package poo_testes;
+
+import CLASSES.funcionarios;
+
+public class impressoes {
+
+	public static void main(String[] args) {
+		
+		funcionarios funcionario = new funcionarios();
+		
+		funcionario.setnome("Cesar Augusto Filho");
+		funcionario.setidade(40);
+		funcionario.setsalarios( new double[] {1200, 2000, 1300});
+		
+		
+		
+		funcionario.dados();
+		funcionario.imprimeMedia();
+		System.out.println("Media igual a " + funcionario.getmedia());
+ }
+}
